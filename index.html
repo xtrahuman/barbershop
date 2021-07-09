@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>barber shop website design</title>
+</head>
+<body>
+    <section id=banner>
+        <img src="Barber_Shop_img/logo.png" alt="barber log" class="logo">
+        <div class="banner-text">
+            <h1>Hair Studio</h1>
+             <p> best place to style your hair bla bla</p>
+             <div class="banner-btn">
+                 <a href="#"><span></span>Find Out</a>
+                 <a href="#"><span></span>Read More</a>
+             </div>
+        </div>
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Meet us</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="Barber_Shop_img/menu.png" id="menu">
+    </div>
+
+    <!--Features-->
+    
+    <section id="feature">
+        <div class="title-text">
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+        </div>
+
+    </section>
+
+
+
+    
+    <script>
+        var menuBtn= document.getElementById("menuBtn")
+        var menu= document.getElementById("menu")
+        var sideNav= document.getElementById("sideNav")
+
+        sideNav.style.right="-250px"
+        menuBtn.onclick= function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0";
+                menu.src="Barber_Shop_img/close.png"
+            }else{
+                sideNav.style.right="-250px";
+                menu.src="Barber_Shop_img/menu.png"
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
