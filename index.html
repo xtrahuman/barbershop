@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>barber shop website design</title>
 </head>
 <body>
@@ -25,11 +26,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Meet us</a></li>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#testimonial">Testimonials</a></li>
+                <li><a href="#footer">Meet us</a></li>
             </ul>
 
         </nav>
@@ -93,7 +94,7 @@
             <div class="single-service">
                 <img src="Barber_Shop_img/pic-1.jpg" alt="">
                 <div class="overlay"></div>
-                <div class="servic-desc">
+                <div class="service-desc">
                     <h3>Hair Styling</h3>
                     <hr>
                     <p>this the test under description of barber foundation this the test under description of barber foundation</p>
@@ -102,7 +103,7 @@
             <div class="single-service">
                 <img src="Barber_Shop_img/pic-2.jpg" alt="">
                 <div class="overlay"></div>
-                <div class="servic-desc">
+                <div class="service-desc">
                     <h3>Beard Trimming</h3>
                     <hr>
                     <p>this the test under description of barber foundation this the test under description of barber foundation</p>
@@ -111,7 +112,7 @@
             <div class="single-service">
                 <img src="Barber_Shop_img/pic-3.jpg" alt="">
                 <div class="overlay"></div>
-                <div class="servic-desc">
+                <div class="service-desc">
                     <h3>Hair cut</h3>
                     <hr>
                     <p>this the test under description of barber foundation this the test under description of barber foundation</p>
@@ -120,13 +121,84 @@
             <div class="single-service">
                 <img src="Barber_Shop_img/pic-4.jpg" alt="">
                 <div class="overlay"></div>
-                <div class="servic-desc">
+                <div class="service-desc">
                     <h3>Dry shampooing</h3>
                     <hr>
                     <p>this the test under description of barber foundation this the test under description of barber foundation</p>
                 </div>
             </div>
 
+        </div>
+
+    </section>
+
+   <!-- Testimonial -->
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/img-1.jpg" alt="">
+                    <div class="user-info">
+                        <h4>KEN NORMAN <i class="fa fa-twitter"></i></h4>
+                        <small>@kennorman</small>
+                    </div>
+                </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nisi in corporis quasi veniam blanditiis reprehenderit odit sint porro sequi, a impedit at eveniet dolorem laborum asperi</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/img-2.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Liara karian<i class="fa fa-twitter"></i></h4>
+                        <small>@liara</small>
+                    </div>
+                </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicingriam ratione harum cupiditate commodi! Nam, cupiditate nostrum, culpa voluptatem officiis nobis, est ex nihil </p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Barber_Shop_img/img-3.jpg" alt="">
+                    <div class="user-info">
+                        <h4>Ricky Danial<i class="fa fa-twitter"></i></h4>
+                        <small>@rickydanial</small>
+                    </div>
+                </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus distinctio, veniam modi magnam sequi possimus necessitatibus dolore perspiciatis incidunt, aliquam dolores quod deserun</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+        <img src="Barber_Shop_img/footer-img.png" alt="" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc Colony, xyz City IN<i class="fa fa-map-marker"></i></p>
+                <p>example@website.com<i class="fa fa-paper-plane"></i></p>
+                <p>+234 7084881028<i class="fa fa-phone"></i></p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+            <p>Copyright okpara tochukwu </p>
         </div>
 
     </section>
@@ -147,6 +219,10 @@
                 menu.src="Barber_Shop_img/menu.png"
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	      speed: 1000,
+        	speedAsDuration: true
+});
     </script>
 
     
