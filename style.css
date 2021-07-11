@@ -162,7 +162,150 @@ nav ul li a{
     font-size: 50px
 }
 
+.feature-box{
+    width: 80%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    text-align:center;
+}
 
+.features{
+    flex-basis:50%;
+}
+
+.features-img{
+    flex-basis:50%;
+    margin:auto;
+}
+
+.features-img img{
+    width:70%;
+    border-radius:10px;
+}
+
+.features h1{
+    text-align:left;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#009688
+}
+
+.features-desc{
+    display:flex;
+    align-items:center;
+    margin-bottom: 40px;
+}
+
+.feature-icon .fa{
+    width:50px;
+    height:50px;
+    font-size:30px;
+    line-height: 50px;
+    border-radius:8px;
+    color: #009688;
+    border: 1px solid #009688
+}
+
+.feature-text p{
+    padding: 0 20px;
+    text-align: initial;
+}
+
+@media screen and (max-width: 770px){
+    .title-text h1{
+        font-size: 35px
+    }
+
+    .features{
+        flex-basis:100%;
+    }
+
+    .features-img{
+        flex-basis:100%;
+    }
+
+    .features-img img{
+        width:100%;
+    }
+    
+}
+
+
+/*--service--*/
+
+#service{
+    width:100%;
+    padding:70px 0;
+    background:#efefef;
+}
+
+.service-box{
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    margin:auto;
+}
+
+.single-service{
+    flex-basis:48%;
+    text-align:center;
+    border-radius:7px;
+    margin-bottom:20px;
+    color:#fff;
+    position:relative
+}
+
+.single-service img{
+    width:100%;
+    border-radius:7px;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    border-radius:7px;
+    cursor:pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity:0;
+    transition: 1s;
+}
+
+.single-service:hover .overlay{
+    opacity:1;
+}
+
+.servic-desc{
+    width: 80%;
+    position:absolute;
+    bottom:0%;
+    left:50%;
+    opacity:0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+hr{
+    background:#fff;
+    height: 2px;
+    border: 0;
+    margin:15px auto;
+    width:60%;
+
+}
+
+.servic-desc p{
+    font-size:14px;
+}
+
+.single-service:hover .servic-desc{
+    bottom:40%;
+    opacity:1;
+}
 
 
 
